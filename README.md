@@ -1,6 +1,6 @@
 # Peaceful
 
-[![npm version](https://img.shields.io/npm/v/peaceful.svg?maxAge=2592000)]()
+[![npm version](https://img.shields.io/npm/v/peaceful.svg?maxAge=2592000)](https://www.npmjs.com/package/peaceful)
 [![Code Style: Standard](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 ![Stability: Experimental](https://img.shields.io/badge/stability-experimental-orange.svg)
 
