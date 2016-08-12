@@ -1,0 +1,30 @@
+{
+  "name": "peaceful",
+  "version": "1.0.0",
+  "description": "A React-like stateful component class.",
+  "main": "index.js",
+  "scripts": {
+    "example:basic": "budo example/basic.js -lo",
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remixz/peaceful.git"
+  },
+  "author": "Zach Bruggeman <mail@bruggie.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/remixz/peaceful/issues"
+  },
+  "homepage": "https://github.com/remixz/peaceful#readme",
+  "dependencies": {
+    "deep-equal": "^1.0.1",
+    "morphdom": "^2.0.2",
+    "on-load": "^3.2.0"
+  },
+  "devDependencies": {
+    "bel": "^4.4.3",
+    "budo": "^8.3.0",
+    "standard": "^7.1.2"
+  }
+}

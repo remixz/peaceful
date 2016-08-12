@@ -1,0 +1,37 @@
+// taken from https://github.com/maxogden/yo-yo/blob/6772d6a98815e48f3fc3df96bad43a29b087927c/update-events.js
+module.exports = [
+  // attribute events (can be set with attributes)
+  'onclick',
+  'ondblclick',
+  'onmousedown',
+  'onmouseup',
+  'onmouseover',
+  'onmousemove',
+  'onmouseout',
+  'ondragstart',
+  'ondrag',
+  'ondragenter',
+  'ondragleave',
+  'ondragover',
+  'ondrop',
+  'ondragend',
+  'onkeydown',
+  'onkeypress',
+  'onkeyup',
+  'onunload',
+  'onabort',
+  'onerror',
+  'onresize',
+  'onscroll',
+  'onselect',
+  'onchange',
+  'onsubmit',
+  'onreset',
+  'onfocus',
+  'onblur',
+  'oninput',
+  // other common events
+  'oncontextmenu',
+  'onfocusin',
+  'onfocusout'
+]
