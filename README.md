@@ -65,6 +65,23 @@ As well, Peaceful components implement all of [React's lifecycle events](https:/
 * If you have a Peaceful component as a child of another component, the child component will run `componentWillMount` every time the parent component updates. There's unfortunately no way around this, since `morphdom` has to create the component once to figure out what's changed. If you're using ES2015 classes though, you should probably just move anything in a `componentWillMount` to the `constructor`, since it's essentially the same thing. It'll be run every time the parent component updates as well, due to the aforementioned `morphdom` mechanic.
 * Child components will only run the `componentWillReceiveProps` if the props have changed.
 
+The biggest difference from React is that to actually render the component, you call the `mount()` function on the instance to return an element, and then append that element with some DOM API, like `document.body.appendChild()`. `mount()` takes one param, a boolean. If you call `mount(true)`, it'll return an HTML string instead of an element, so that you can do server-side rendering.
+
+When you've mounted the component (i.e. on `componentDidMount`), you can get the DOM element by accessing `this.element`. Example:
+
+```js
+class Input extends Component {
+  componentDidMount () {
+    console.log(this.element.value)
+    this.element.focus()
+  }
+
+  render () {
+    return bel`<input type="text" value="foo" />`
+  }
+}
+```
+
 ## Inspiration
 
 I'd recently been using [yo-yo](https://github.com/maxogden/yo-yo) for some prototyping, and it just felt so nice to use. I really liked not having to set up a whole compilation environment to get things working, especially since Chrome supports pretty much all the ES2015 features now. I could just run my code without any struggle! I think with all of the complication we have now around web development, we kind of forget how things used to be.
