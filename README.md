@@ -10,7 +10,7 @@ Best paired with [bel](https://github.com/shama/bel) for creating elements.
 
 ## Example
 
-Run `npm run example:basic` to see this in action:
+Run `npm run example:basic` to see this in action, or [view on requirebin](http://requirebin.com/?gist=f269592263bb3b63416b5d1b26adfa51):
 ```js
 const Component = require('peaceful')
 const bel = require('bel')
